@@ -3,7 +3,7 @@
 ## First slide 
 
 <audio controls>
-  <source src="hello.aiff">
+  <source src="./hello.aiff">
 Your browser does not support the audio element.
 </audio>
 
