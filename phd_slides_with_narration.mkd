@@ -1,0 +1,21 @@
+%Title
+%Pietro FODRA (University of Paris 7)
+%Phd Advisor : Huyen Pham
+
+<script src='./MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'></script>
+
+# Directional bets and the power of information in market making
+
+## Stock price assumption
+
+<audio controls> <source src=audio_0.aiff> </audio>
+
+We assume that the mid price has
+
+- expected arithmetic return 
+	$$ \mathbb E[P_T-P_t \vert Z_{t-}=z] =: \epsilon(t,z) $$
+
+-  expected integrated volatility
+	$$ \mathbb E [ \int_t^T d\langle P\rangle_s  \vert   Z_{t-}=z ]  =: \rho_2(t,z) $$
+
+where $Z = (P, ...)$ is a Markov process embedding the stock price.

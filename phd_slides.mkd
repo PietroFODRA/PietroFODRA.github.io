@@ -1,0 +1,15 @@
+# Directional bets and the power of information in market making
+
+## Stock price assumption
+
+> We have minimal assumptions on the stock price\. We assume that the price process P can be embedded in a finite dimension Markov system, called Z\. For example, this is the case of the Ornstein-Uhlenbeck process\, which is already Markov, or the Heston model, where the stochastic couple price-volatility forms a Markov system\. In particular, we assume that the conditional expectation of the price  increment is defined by a function epsilon, depending on t and z, and the same holds for the average integrated volatility, denoted by ro 2. 
+
+We assume that the mid price has
+
+- expected arithmetic return 
+	$$ \mathbb E[P_T-P_t \vert Z_{t-}=z] =: \epsilon(t,z) $$
+
+-  expected integrated volatility
+	$$ \mathbb E [ \int_t^T d\langle P\rangle_s  \vert   Z_{t-}=z ]  =: \rho_2(t,z) $$
+
+where $Z = (P, ...)$ is a Markov process embedding the stock price.
