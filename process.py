@@ -43,7 +43,7 @@ if __name__ == "__main__":
     f.close()
 
     if html:
-        os.system("pandoc -s -i -t dzslides "+with_narration+".mkd -o "+with_narration+".html")
+        os.system("pandoc -s -i -t dzslides "+with_narration+".mkd -o index.html")
     if pdf:
         os.system("pandoc -s -i -t beamer "+with_narration+".mkd -o "+with_narration+".pdf")
 
