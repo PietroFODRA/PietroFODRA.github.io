@@ -75,6 +75,7 @@
   /* The items to-be-selected */
   .incremental > *[aria-selected] ~ * { opacity: 0.2; }
 </style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
 <section class="title">
@@ -92,10 +93,10 @@
 <p><audio controls> <source src=audio_0.aiff> </audio></p>
 <p>We assume that the mid price has</p>
 <ul class="incremental">
-<li><p>expected arithmetic return <br /><span class="math">$$ \mathbb E[P_T-P_t \vert Z_{t-}=z] =: \epsilon(t,z) $$</span><br /></p></li>
-<li><p>expected integrated volatility <br /><span class="math">$$ \mathbb E [ \int_t^T d\langle P\rangle_s  \vert   Z_{t-}=z ]  =: \rho_2(t,z) $$</span><br /></p></li>
+<li><p>expected arithmetic return <span class="math">\[ \mathbb E[P_T-P_t \vert Z_{t-}=z] =: \epsilon(t,z) \]</span></p></li>
+<li><p>expected integrated volatility <span class="math">\[ \mathbb E [ \int_t^T d\langle P\rangle_s  \vert   Z_{t-}=z ]  =: \rho_2(t,z) \]</span></p></li>
 </ul>
-<p>where <span class="math"><em>Z</em> = (<em>P</em>, ...)</span> is a Markov process embedding the stock price.</p>
+<p>where <span class="math">\(Z = (P, ...)\)</span> is a Markov process embedding the stock price.</p>
 </section>
 <!-- {{{{ dzslides core
 #

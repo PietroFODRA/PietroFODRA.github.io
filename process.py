@@ -15,7 +15,7 @@ def html_include_audio(path):
 
 source_mkd = "phd_slides"
 include = ["Title","Pietro FODRA (University of Paris 7)","Phd Advisor : Huyen Pham"]
-mathjax_dir = "MathJax"
+mathjax_dir = "../MathJax"
 html = True
 pdf = False
 
@@ -28,7 +28,8 @@ if __name__ == "__main__":
     slides = ""
     for inc in include:
 		slides += "%" + inc + "\n"
-    slides += "\n" + html_mathjax(mathjax_dir) + "\n\n"
+    slides += "\n"
+    slides += html_mathjax(mathjax_dir) + "\n\n"
     for line in file:
         if line.startswith("> "):
             audio_path = "audio_"+str(i)
@@ -43,11 +44,11 @@ if __name__ == "__main__":
     f.close()
 
     if html:
-        os.system("pandoc -s -i -t dzslides "+with_narration+".mkd -o index.html")
+        os.system("pandoc --mathjax -s -i -t dzslides "+with_narration+".mkd -o index.html")
     if pdf:
-        os.system("pandoc -s -i -t beamer "+with_narration+".mkd -o "+with_narration+".pdf")
+        os.system("pandoc --mathjax -s -i -t beamer "+with_narration+".mkd -o "+with_narration+".pdf")
 
-    os.system("open -a Safari "+with_narration+".html")
+    os.system("open -a Safari index.html")
 
 
 
