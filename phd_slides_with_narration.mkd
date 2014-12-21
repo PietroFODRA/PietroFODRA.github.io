@@ -2,8 +2,6 @@
 %Pietro FODRA (University of Paris 7)
 %Phd Advisor : Huyen Pham
 
-<script src='./MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'></script>
-
 # Directional bets and the power of information in market making
 
 ## Stock price assumption

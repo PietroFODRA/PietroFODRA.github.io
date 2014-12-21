@@ -18,6 +18,7 @@ include = ["Title","Pietro FODRA (University of Paris 7)","Phd Advisor : Huyen P
 mathjax_dir = "../MathJax"
 html = True
 pdf = False
+offline = False
 
 if __name__ == "__main__":
     
@@ -29,7 +30,8 @@ if __name__ == "__main__":
     for inc in include:
 		slides += "%" + inc + "\n"
     slides += "\n"
-    slides += html_mathjax(mathjax_dir) + "\n\n"
+    if offline:
+        slides += html_mathjax(mathjax_dir) + "\n\n"
     for line in file:
         if line.startswith("> "):
             audio_path = "audio_"+str(i)
